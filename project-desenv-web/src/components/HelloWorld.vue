@@ -1,60 +1,144 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
-    </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-router" target="_blank" rel="noopener">router</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-vuex" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
-    </ul>
-  </div>
-</template>
+  <v-container>
+  <div>
+  <v-card
+    class="mx-auto"
+    height="300"
+    width="330"
+  >
+    <v-navigation-drawer
+      permanent
+      width="100%"
+    >
+      <v-row
+        class="fill-height"
+        no-gutters
+      >
+        <v-navigation-drawer
+          dark
+          mini-variant
+          mini-variant-width="56"
+          permanent
+        >
+          <v-list-item class="px-2">
+            <v-list-item-avatar>
+              <v-img src="https://randomuser.me/api/portraits/women/75.jpg"></v-img>
+            </v-list-item-avatar>
+          </v-list-item>
 
+          <v-divider></v-divider>
+
+          <v-list
+            dense
+            nav
+          >
+            <v-list-item
+              v-for="item in items"
+              :key="item.title"
+            >
+              <v-list-item-action>
+                <v-icon>{{ item.icon }}</v-icon>
+              </v-list-item-action>
+
+              <v-list-item-content>
+                <v-list-item-title>{{ item.title }}</v-list-item-title>
+              </v-list-item-content>
+            </v-list-item>
+          </v-list>
+        </v-navigation-drawer>
+
+        <v-list class="grow">
+          <v-list-item
+            v-for="link in links"
+            :key="link"
+            link
+          >
+            <v-list-item-title v-text="link"></v-list-item-title>
+          </v-list-item>
+        </v-list>
+      </v-row>
+    </v-navigation-drawer>
+  </v-card>
+  </div>
+  <div>
+  <v-hover v-slot="{ hover }">
+    <v-card
+      class="mx-auto"
+      color="grey lighten-4"
+      max-width="600"
+    >
+      <v-img
+        :aspect-ratio="16/9"
+        src="https://cdn.vuetifyjs.com/images/cards/kitchen.png"
+      >
+        <v-expand-transition>
+          <div
+            v-if="hover"
+            class="d-flex transition-fast-in-fast-out orange darken-2 v-card--reveal text-h2 white--text"
+            style="height: 100%;"
+          >
+            $14.99
+          </div>
+        </v-expand-transition>
+      </v-img>
+      <v-card-text
+        class="pt-6"
+        style="position: relative;"
+      >
+        <v-btn
+          absolute
+          color="orange"
+          class="white--text"
+          fab
+          large
+          right
+          top
+        >
+          <v-icon>mdi-cart</v-icon>
+        </v-btn>
+        <div class="font-weight-light grey--text text-h6 mb-2">
+          For the perfect meal
+        </div>
+        <h3 class="text-h4 font-weight-light orange--text mb-2">
+          QW cooking utensils
+        </h3>
+        <div class="font-weight-light text-h6 mb-2">
+          Our Vintage kitchen utensils delight any chef.<br>
+          Made of bamboo by hand
+        </div>
+      </v-card-text>
+    </v-card>
+  </v-hover>
+  </div>
+
+  </v-container>
+</template>
 <script>
-export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
+  export default {
+    data () {
+      return {
+        items: [
+          { title: 'Home', icon: 'mdi-view-dashboard' },
+          { title: 'About', icon: 'mdi-forum' },
+        ],
+        links: ['Home', 'Contacts', 'Settings'],
+        mini: true,
+      }
+    },
   }
-}
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h3 {
-  margin: 40px 0 0;
+<style>
+
+div {
+    display: inline-block;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+.v-card--reveal {
+  align-items: center;
+  bottom: 0;
+  justify-content: center;
+  opacity: .5;
+  position: absolute;
+  width: 100%;
 }
 </style>
