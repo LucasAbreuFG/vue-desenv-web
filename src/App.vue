@@ -2,7 +2,7 @@
   <v-app>
     <template>
       <div>
-        <v-system-bar dark color="primary">
+        <v-system-bar app dark color="primary">
           <v-spacer></v-spacer>
           <v-icon>mdi-wifi-strength-4</v-icon>
           <v-icon>mdi-signal-cellular-outline</v-icon>
@@ -59,7 +59,7 @@
       </v-sheet>
     </v-card>
 
-    <v-footer color="primary lighten-1" padless>
+    <v-footer app color="primary lighten-1" padless>
       <v-row justify="center" no-gutters>
         <v-btn
           v-for="link in links"
@@ -76,7 +76,7 @@
         </v-col>
       </v-row>
     </v-footer>
-    <v-bottom-navigation :value="value" color="teal" grow>
+    <v-bottom-navigation :value="value"  app color="teal" grow>
       <v-btn>
         <span>Recents</span>
 

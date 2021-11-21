@@ -115,9 +115,7 @@
             </template>
           </v-row>
         </v-container>
-      </div>
-    </div>
-    <div class ="baseCalendar">
+        <div class="baseCalendar">
       <v-sheet tile height="54" class="d-flex">
         <v-btn icon class="ma-2" @click="$refs.calendar.prev()">
           <v-icon>mdi-chevron-left</v-icon>
@@ -168,6 +166,10 @@
         ></v-calendar>
       </v-sheet>
     </div>
+      </div>
+      
+    </div>
+    
   </v-container>
 </template>
 
@@ -266,11 +268,14 @@ export default {
 };
 </script>
 <style>
-.baseCalendar{
-  width: 97vw;
+.lateral-card{
+    height: 95.5vh;
+}
+.baseCalendar {
+  width:88vw;
   margin-left: 1.5rem;
   margin-top: 1rem;
-} 
+}
 .container {
   margin: 0 !important;
   padding: 0 !important;
@@ -298,7 +303,9 @@ export default {
   .baseCalendar {
     width: 95%;
     margin-left: 0.9rem;
-
   }
+  .lateral-card{
+    height: 162vh;
+}
 }
 </style>

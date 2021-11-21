@@ -4,7 +4,7 @@
 </template>
 
 <script>
-  import HelloWorld from '../components/HelloWorld'
+  import HelloWorld from '../components/content-page'
 
   export default {
     name: 'Home',
