@@ -64,6 +64,10 @@ or
 
 `npm run serve`
 
+or
+
+`yarn run serve`
+
 And it's working on your machine! 🚀🚀
 <br>
 <br>
