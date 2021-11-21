@@ -13,7 +13,6 @@
 
 <br>
 
-<br>
 
 ---
 
@@ -28,7 +27,6 @@ The project was developed using the following technologies:
 - Vue.js
 - Vuetify
 
-<br>
 
 --- 
 
@@ -39,7 +37,6 @@ These are the requirements to run the project on your machine.
 - Node.JS >= 10.16.2
 - Yarn >= 1.17.3
 - NPM >= 6.9.0
-<br> 
 
 ## **How to test the project** 🔧
 
