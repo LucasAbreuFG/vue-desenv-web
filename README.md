@@ -55,8 +55,12 @@ After that, go to the terminal where the folder where the project was cloned and
 
 `npm install`
 
+or
+
+`yarn install`
+
 <br>
--- Finally, just type the project startup command:
+-- Finally, just type the start command on your terminal, being in the path of the cloned project:
 
 `npm run serve`
 
