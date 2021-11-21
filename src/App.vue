@@ -2,10 +2,7 @@
   <v-app>
     <template>
       <div>
-        <v-system-bar
-          dark
-          color="primary"
-        >
+        <v-system-bar dark color="primary">
           <v-spacer></v-spacer>
           <v-icon>mdi-wifi-strength-4</v-icon>
           <v-icon>mdi-signal-cellular-outline</v-icon>
@@ -16,12 +13,12 @@
     </template>
 
     <v-main>
-      <router-view/>
+      <router-view />
     </v-main>
-    <v-card class="overflow-hidden" style="position: absolute;
-      top: 2.5%;
-      right: 0;
-      width: 100%;">
+    <v-card
+      class="overflow-hidden"
+      style="position: absolute; top: 2.5%; right: 0; width: 100%"
+    >
       <v-app-bar
         absolute
         color="#fcb69f"
@@ -58,70 +55,55 @@
         class="overflow-y-auto"
         max-height="600"
       >
-        <v-container style="height: 128px;"></v-container>
+        <v-container style="height: 128px"></v-container>
       </v-sheet>
     </v-card>
 
- <v-footer
-    color="primary lighten-1"
-    padless
-  >
-    <v-row
-      justify="center"
-      no-gutters
-    >
-      <v-btn
-        v-for="link in links"
-        :key="link"
-        color="white"
-        text
-        rounded
-        class="my-2"
-      >
-        {{ link }}
+    <v-footer color="primary lighten-1" padless>
+      <v-row justify="center" no-gutters>
+        <v-btn
+          v-for="link in links"
+          :key="link"
+          color="white"
+          text
+          rounded
+          class="my-2"
+        >
+          {{ link }}
+        </v-btn>
+        <v-col class="primary lighten-2 py-4 text-center white--text" cols="12">
+          {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
+        </v-col>
+      </v-row>
+    </v-footer>
+    <v-bottom-navigation :value="value" color="teal" grow>
+      <v-btn>
+        <span>Recents</span>
+
+        <v-icon>mdi-history</v-icon>
       </v-btn>
-      <v-col
-        class="primary lighten-2 py-4 text-center white--text"
-        cols="12"
-      >
-        {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
-      </v-col>
-    </v-row>
-  </v-footer>
-  <v-bottom-navigation
-    :value="value"
-    color="teal"
-    grow
-  >
-    <v-btn>
-      <span>Recents</span>
 
-      <v-icon>mdi-history</v-icon>
-    </v-btn>
+      <v-btn>
+        <span>Favorites</span>
 
-    <v-btn>
-      <span>Favorites</span>
+        <v-icon>mdi-heart</v-icon>
+      </v-btn>
 
-      <v-icon>mdi-heart</v-icon>
-    </v-btn>
+      <v-btn>
+        <span>Nearby</span>
 
-    <v-btn>
-      <span>Nearby</span>
-
-      <v-icon>mdi-map-marker</v-icon>
-    </v-btn>
-  </v-bottom-navigation>
+        <v-icon>mdi-map-marker</v-icon>
+      </v-btn>
+    </v-bottom-navigation>
   </v-app>
-  
 </template>
 
 
 
 
 <script>
-
 export default {
-  name: 'App',
+  name: "App",
 
   data: () => ({
     //
