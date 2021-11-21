@@ -37,7 +37,7 @@
           ></v-img>
         </template>
 
-        <v-app-bar-title>Title</v-app-bar-title>
+        <v-app-bar-title>Space Page</v-app-bar-title>
 
         <v-spacer></v-spacer>
 
