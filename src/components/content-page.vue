@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <div style="display: inline-flex; margin-top: 9rem">
+    <div style="display: inline-flex; margin-top: 3rem">
       <div class="ma-12 pa-12">
         <v-card class="lateral-card">
           <v-navigation-drawer permanent expand-on-hover>
