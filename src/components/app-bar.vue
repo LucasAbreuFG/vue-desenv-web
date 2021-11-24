@@ -31,7 +31,7 @@
               ></v-img>
             </template>
 
-            <v-app-bar-title style="padding-bottom: 2vh;">Space Page</v-app-bar-title>
+            <v-app-bar-title style="padding-bottom: 2vh;">The Food List</v-app-bar-title>
 
             <v-spacer></v-spacer>
 
