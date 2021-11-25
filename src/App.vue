@@ -4,6 +4,7 @@
 
     <!-- Sizes your content based upon application components -->
     <v-container style="margin-top: 4rem; margin-bottom: 7rem" >
+      
       <router-view />
       <!-- Provides the application the proper gutter -->
       
@@ -12,23 +13,51 @@
     <v-footer app>
       <v-footer app color="primary lighten-1" padless>
         <v-row justify="center" no-gutters>
+          <router-link to="/home">
           <v-btn
-            v-for="link in links"
-            :key="link"
             color="white"
             text
             rounded
             class="my-2"
           >
-            {{ link }}
+            Home
           </v-btn>
-          <v-col class="primary lighten-2 py-4 text-center white--text" cols="12">
-            {{ new Date().getFullYear() }} — <strong>Food List</strong>
-          </v-col>
+        </router-link>
+        <router-link to="/restaurants">
+          <v-btn
+            color="white"
+            text
+            rounded
+            class="my-2"
+          >      
+              Restaurants
+          </v-btn>
+        </router-link>
+        <router-link to="/">
+          <v-btn
+            color="white"
+            text
+            rounded
+            class="my-2"
+          >
+            Food
+          </v-btn>
+        </router-link>
+        <router-link to="/contact">
+          <v-btn
+            color="white"
+            text
+            rounded
+            class="my-2"
+          >
+            Contact
+          </v-btn>
+        </router-link>
+
         </v-row>
       </v-footer>
 
-      <v-bottom-navigation :value="value"  app color="teal" grow>
+      <v-bottom-navigation :value="value"  app  grow>
         <v-btn>
           <span>Recents</span>
 
@@ -54,13 +83,18 @@
 <script>
 
 import AppBar from "./components/app-bar.vue"
+
 export default {
   name: "App",
   components:{
-    AppBar
+    AppBar,
   },
   data: () => ({
-    //
   }),
 };
 </script>
+<style>
+  .v-application--wrap{
+    min-height: 0 !important;
+  }
+</style>

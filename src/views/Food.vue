@@ -1,5 +1,6 @@
 <template >
   <div >
+    <ToolBar></ToolBar>
     <v-row >
       <v-col
         v-for="(data,i) in (myCard)"
@@ -9,7 +10,7 @@
         xs="2"
         sm="2"
       >
-          <CardsAbout :cardid="i" :cardInfo="data" :localizacao="myLocalizacao[i]" :price="myprice[i]" :photoNames="photoNames[i]"></CardsAbout>
+          <CardsAbout :cardid="i" :cardInfo="data.restaurantName" :localizacao="data.localization" :price="data.price" :photoNames="data.path"></CardsAbout>
       </v-col>
     </v-row>
   </div>
@@ -17,9 +18,11 @@
 
 <script>
   import CardsAbout from '../components/my-card'
+  import ToolBar from "../components/tool-bar.vue"
+
 
   export default {
-    name: 'Home',
+    name: 'Food',
     data(){
       return{
         titleview: this.$store.state.title  
@@ -29,21 +32,10 @@
       myCard(){
         return this.$store.state.cards
       },
-      title(){
-        return this.$store.getters.bigTitle
-      },
-      myLocalizacao(){
-        return this.$store.state.localizacao
-      },
-      myprice(){
-        return this.$store.state.price
-      },
-      photoNames(){
-        return this.$store.state.photoNames
-      }
     },
     components: {
       CardsAbout,
+      ToolBar
     },
   }
 </script>
