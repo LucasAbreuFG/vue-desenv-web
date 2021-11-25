@@ -11,7 +11,7 @@
     </v-container>
 
     <v-footer app>
-      <v-footer app color="primary lighten-1" padless>
+      <v-footer app  padless style="background:#FF8D7C">
         <v-row justify="center" no-gutters>
           <router-link to="/home">
           <v-btn
@@ -94,6 +94,9 @@ export default {
 };
 </script>
 <style>
+  a{
+    text-decoration: none;
+  }
   .v-application--wrap{
     min-height: 0 !important;
   }
