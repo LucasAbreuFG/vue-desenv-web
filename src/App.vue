@@ -13,7 +13,7 @@
     <v-footer app>
       <v-footer app  padless style="background:#FF8D7C">
         <v-row justify="center" no-gutters>
-          <router-link to="/home">
+          <router-link to="/">
           <v-btn
             color="white"
             text
@@ -33,7 +33,7 @@
               Restaurants
           </v-btn>
         </router-link>
-        <router-link to="/">
+        <router-link to="/food">
           <v-btn
             color="white"
             text
