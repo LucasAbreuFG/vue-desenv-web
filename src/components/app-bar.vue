@@ -17,7 +17,7 @@
       >
         <v-app-bar
           absolute
-          color="#fcb69f"
+          color="#FF8D7C"
           dark
           shrink-on-scroll
           src="https://picsum.photos/1920/1080?random"
@@ -27,7 +27,7 @@
           <template v-slot:img="{ props }">
             <v-img
               v-bind="props"
-              gradient="to top right, rgba(19,84,122,.5), rgba(128,208,199,.8)"
+              gradient="to top right, rgba(255,141,124,.5), rgba(255,209,202,.8)"
             ></v-img>
           </template>
 

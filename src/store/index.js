@@ -99,6 +99,22 @@ export default new Vuex.Store({
         path: "//cdn.archilovers.com/projects/b_730_99278a08-6837-4db7-88ab-2b26ebc43aa1.jpg"
       },
     ],
+    homeCards:[
+      {
+        nameCard: "Restaurantes",
+        aboutCard:"Encontre os melhores restaurantes!",
+        image: "https://i.pinimg.com/564x/12/ec/ba/12ecba06bd861a65ec22b195b7dacf1d.jpg",
+        path:"/restaurants",
+        imageColor: "background: #ed9e73"
+      },
+      {
+        nameCard: "Comidas",
+        aboutCard:"Encontre as melhores refeições!",
+        image: "https://i.pinimg.com/736x/25/07/86/2507868480d45f8bfd756833cb264670.jpg",
+        path:"/food",
+        imageColor: "background: #ea1d2c"
+      },
+    ],
     title:"Hello"
 
   },
