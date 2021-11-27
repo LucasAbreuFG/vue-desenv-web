@@ -26,7 +26,7 @@ The project was developed using the following technologies:
 - Javascript
 - Vue.js
 - Vuetify
-
+ 
 
 --- 
 
