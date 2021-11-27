@@ -10,7 +10,7 @@
 ## 📃 **About**
 
 &nbsp;&nbsp;&nbsp;&nbsp;This is a project created in order to learn more about the **Vue.js** framework, trying to develop a basic page using its tools
-
+ 
 <br>
 
 
