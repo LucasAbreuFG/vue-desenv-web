@@ -2,7 +2,7 @@
 
 
 <h1  >
-    <img  src = "src/assets/gifPages.gif">
+    <img  src = "src/assets/paginaCerta.gif">
 
 </h1>
 

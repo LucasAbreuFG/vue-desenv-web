@@ -72,8 +72,8 @@
           <v-icon>mdi-heart</v-icon>
         </v-btn>
 
-        <v-btn>
-          <span href="https://www.google.com/maps/search/restaurantes+sorocaba/@-23.4609861,-47.4791241,13.75z">Lugares</span>
+        <v-btn href="https://www.google.com/maps/search/restaurantes+sorocaba/@-23.4609861,-47.4791241,13.75z">
+          <span >Lugares</span>
 
           <v-icon>mdi-map-marker</v-icon>
         </v-btn>

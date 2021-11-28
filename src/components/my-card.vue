@@ -32,7 +32,7 @@
     </v-card-text>
 
     <v-card-actions>
-      <v-btn color="deep-purple lighten-2" text @click="reserve">
+      <v-btn color="deep-purple lighten-2" text @click="reserve" :href="pathFood" target="_blank">
         Mais Sobre
       </v-btn>
     </v-card-actions>
@@ -64,7 +64,7 @@
 
 <script>
 export default {
-  props: ["cardid", "cardInfo", "localizacao", "price", "photoNames", "aboutFoods"],
+  props: ["cardid", "cardInfo", "localizacao", "price", "photoNames", "aboutFoods", "pathFood"],
   data: () => ({
     loading: false,
     selection: 1,

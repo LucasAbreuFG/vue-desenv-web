@@ -9,7 +9,7 @@
         xs="2"
         sm="2"
       >
-          <CardsAbout :cardid="i" :cardInfo="data.restaurantName" :localizacao="data.localization" :price="data.price" :photoNames="data.path" :aboutFoods="data.aboutCard"></CardsAbout>
+          <CardsAbout :cardid="i" :cardInfo="data.restaurantName" :localizacao="data.localization" :price="data.price" :photoNames="data.path" :aboutFoods="data.aboutCard" :pathFood="data.pathFood"></CardsAbout>
       </v-col>
     </v-row>
   </div>
