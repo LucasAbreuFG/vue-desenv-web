@@ -43,14 +43,14 @@
             Food
           </v-btn>
         </router-link>
-        <router-link to="/contact">
+        <router-link to="/about-us">
           <v-btn
             color="white"
             text
             rounded
             class="my-2"
           >
-            Contact
+            About Us
           </v-btn>
         </router-link>
 

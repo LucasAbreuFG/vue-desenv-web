@@ -20,7 +20,7 @@
           color="#FF8D7C"
           dark
           shrink-on-scroll
-          src="https://picsum.photos/1920/1080?random"
+          src="../assets/foto-boa.png"
           scroll-target="#scrolling-techniques-2"
           style="padding-top: 0.8rem"
         >
