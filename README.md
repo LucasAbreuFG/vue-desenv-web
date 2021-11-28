@@ -2,7 +2,7 @@
 
 
 <h1  >
-    <img  src = "src/assets/capagif2.gif">
+    <img  src = "src/assets/capa2.gif">
 
 </h1>
 
