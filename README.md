@@ -23,7 +23,7 @@ The project was developed using the following technologies:
 - Node.js
 - HTML
 - CSS
-- Javascript
+- Javascript 
 - Vue.js
 - Vuetify
  
