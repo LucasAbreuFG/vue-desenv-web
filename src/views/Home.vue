@@ -1,6 +1,5 @@
 <template>
   <div class="about">
-    <ToolBar></ToolBar>
 
     <div style="text-align: center; padding-top: 2vh">
       <h1
@@ -41,12 +40,10 @@
 </template>
 
 <script>
-import ToolBar from "../components/tool-bar.vue";
 import CardHome from "../components/cards-home.vue";
 
 export default {
   components: {
-    ToolBar,
     CardHome,
   },
   computed: {

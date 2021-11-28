@@ -1,6 +1,8 @@
 <template>
   <v-app >
     <AppBar></AppBar>
+    <ToolBar></ToolBar>
+    
 
     <!-- Sizes your content based upon application components -->
     <v-container style="margin-top: 4rem; margin-bottom: 7rem" >
@@ -59,21 +61,26 @@
 
       <v-bottom-navigation :value="value"  app  grow>
         <v-btn>
-          <span>Recents</span>
+          <span>Recentes</span>
 
           <v-icon>mdi-history</v-icon>
         </v-btn>
 
         <v-btn>
-          <span>Favorites</span>
+          <span>Favoritos</span>
 
           <v-icon>mdi-heart</v-icon>
         </v-btn>
 
         <v-btn>
-          <span>Nearby</span>
+          <span href="https://www.google.com/maps/search/restaurantes+sorocaba/@-23.4609861,-47.4791241,13.75z">Lugares</span>
 
           <v-icon>mdi-map-marker</v-icon>
+        </v-btn>
+        <v-btn>
+          <span>Adicionar</span>
+
+          <v-icon>mdi-plus</v-icon>
         </v-btn>
       </v-bottom-navigation>
     </v-footer>
@@ -83,11 +90,13 @@
 <script>
 
 import AppBar from "./components/app-bar.vue"
+import ToolBar from "./components/tool-bar.vue"
 
 export default {
   name: "App",
   components:{
     AppBar,
+    ToolBar
   },
   data: () => ({
   }),

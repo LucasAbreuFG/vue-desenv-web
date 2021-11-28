@@ -20,7 +20,7 @@
           color="#FF8D7C"
           dark
           shrink-on-scroll
-          src="../assets/foto-boa.png"
+          src="https://picsum.photos/1920/1080?random"
           scroll-target="#scrolling-techniques-2"
           style="padding-top: 0.8rem"
         >
@@ -31,8 +31,16 @@
             ></v-img>
           </template>
 
-          <v-app-bar-title style="padding-bottom: 2vh"></v-app-bar-title>
-
+          <v-app-bar-title style="padding-bottom: 2vh"
+            ><v-img
+              src="../assets/icon-food.png"
+              style="margin-left:2.4rem;height:3rem;
+              width:2.2rem;"
+            ></v-img>
+            Connection
+            
+          </v-app-bar-title>
+        
           <v-spacer></v-spacer>
 
           <v-btn icon>

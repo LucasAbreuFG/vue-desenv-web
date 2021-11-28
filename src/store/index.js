@@ -7,57 +7,66 @@ export default new Vuex.Store({
   state: {
     cards:[
       {
-        restaurantName: "Restaurante de Shita",
+        restaurantName: "Pizza de bode Amarelo",
         localization:"São Paulo, Muretinha",
         price:546,
+        aboutCard:"Uma pizza grande de 9 pedaços composta do bode amarelo localizado no sul da Espanha, tem um gosto apimentado e doce.",
         path: "1-re.jpg"
       },
       {
-        restaurantName: "Recanto do Grill",
+        restaurantName: "Pizza de bode com queijo",
         localization:"São Paulo, Vila Nascimento",
         price:412,
+        aboutCard:"Uma pizza grande de 9 pedaços composta do bode de queijo localizado no sul do Japão causando um gosto doce.",
         path: "2-re.jpg"
       },
       {
-        restaurantName: "Divino Pão",
+        restaurantName: "Pão de queijo dourado",
         localization:"Curitiba, Ponte da vida",
         price:421,
+        aboutCard:"Pacote de pão de queijo dourado, feito a risca com massa dourada produzida para ser salgada ao extremo.",
         path: "3-re.jpg"
       },
       {
-        restaurantName: "Rapidão Delivery",
+        restaurantName: "File de peixe acima do ponto",
         localization:"São Paulo, Muretinha",
         price:325,
+        aboutCard:"Prato de File de peixe acima do ponto, produzido especialmente para transmitir um gosto doce e apimentado, localizado ao sul do méxico.",
         path: "4-re.jpg"
       },
       {
-        restaurantName: "Ponto do frango",
+        restaurantName: "Burrito mal passado",
         localization:"Parana, Eulandia",
         price:112,
+        aboutCard:"Prato de Burrito mal passado, feito para transmitir ao usuário um gosto leve e apimentado, utilizando ingredientes de natureza italiana",
         path: "5-re.jpg"
       },
       {
-        restaurantName: "Bona parte Com parte",
+        restaurantName: "Triplo hamburger de bacon",
         localization:"São Paulo, Muretinha",
         price:874,
+        aboutCard:"Grande lanche produzido com um hamburger especial produzido inteiramente de bacon, prato de natureza Americana",
         path: "6-re.jpg"
       },
       {
-        restaurantName: "Arroz queimado no ponto",
+        restaurantName: "Triplo hamburger artesanal",
         localization:"São Paulo, Sorocaba",
         price:123,
+        aboutCard:"Grande lanche produzido por um hamburger genérico Americano, utilizando carnes artesanais.",
         path: "7-re.jpg"
       },
       {
-        restaurantName: "Caldeirão ardente",
+        restaurantName: "Pedaço de Bolo queimado",
         localization:"Amazonas, zé do panguão",
         price:12,
+        aboutCard:"Pedaço de bolo queimado oferecido pelo seu gosto delicioso misturando a doçura do chocolate com o gosto de queimado da massa.",
         path: "8-re.jpg"
       },
       {
-        restaurantName: "Pão de ovo abençoado",
+        restaurantName: "Fritas de hamburger",
         localization:"Rio de Janeiro, Vila Bala",
         price:364,
+        aboutCard:"Fritas produzidas junto do hamburger do lanche, deixando-as com gosto de carne, receita vinda diretamente da Coreia do sul.",
         path: "9-re.jpg"
       },  
     ],

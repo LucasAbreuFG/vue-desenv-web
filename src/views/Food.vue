@@ -1,6 +1,5 @@
 <template >
   <div >
-    <ToolBar></ToolBar>
     <v-row >
       <v-col
         v-for="(data,i) in (myCard)"
@@ -10,7 +9,7 @@
         xs="2"
         sm="2"
       >
-          <CardsAbout :cardid="i" :cardInfo="data.restaurantName" :localizacao="data.localization" :price="data.price" :photoNames="data.path"></CardsAbout>
+          <CardsAbout :cardid="i" :cardInfo="data.restaurantName" :localizacao="data.localization" :price="data.price" :photoNames="data.path" :aboutFoods="data.aboutCard"></CardsAbout>
       </v-col>
     </v-row>
   </div>
@@ -18,7 +17,6 @@
 
 <script>
   import CardsAbout from '../components/my-card'
-  import ToolBar from "../components/tool-bar.vue"
 
 
   export default {
@@ -35,7 +33,6 @@
     },
     components: {
       CardsAbout,
-      ToolBar
     },
   }
 </script>

@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <div style="position: fixed;left: 0; z-index: 10;">
+    <div style="position: fixed;bottom:44%;left: 0; z-index: 10;">
       <div>
         <v-card class="lateral-card">
           <v-navigation-drawer permanent expand-on-hover>

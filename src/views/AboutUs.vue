@@ -1,6 +1,5 @@
 <template>
   <div class="about">
-    <ToolBar></ToolBar>
     
     <div>
         <About></About>
@@ -10,15 +9,11 @@
 </template>
 
 <script>
-  import ToolBar from "../components/tool-bar.vue"
   import About from "../components/about.vue"
   import TextAbout from "../components/textAbout.vue"
 
-
-
 export default({
   components: {
-      ToolBar,
       About,
       TextAbout
     },

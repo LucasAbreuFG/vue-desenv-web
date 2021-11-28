@@ -1,6 +1,5 @@
 <template>
   <div class="about">
-    <ToolBar></ToolBar>
     <h1>Restaurantes afiliados</h1>
       <Carousel></Carousel>
 
@@ -22,13 +21,11 @@
 <script>
   import Carousel from "../components/home-carousel.vue"
   import CardsRestaurant from "../components/cards-restaurants.vue"
-  import ToolBar from "../components/tool-bar.vue"
 
 export default({
   components: {
       Carousel,
       CardsRestaurant,
-      ToolBar
     },
     computed:{
       myRestaurant(){
