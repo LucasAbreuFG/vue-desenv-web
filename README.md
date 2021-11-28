@@ -70,7 +70,12 @@ or
 
 `yarn run serve`
 
-And it's working on your machine! 🚀🚀
+
+And it's running on your machine probably on port 8080, then just access in your browser the link http://localhost:8080 to be able to access the process!! 🚀🚀
+
+
+If you have questions about installing the vue project, check this [LINK](https://cli.vuejs.org/config/#global-cli-config)
+
 <br>
 <br>
 
