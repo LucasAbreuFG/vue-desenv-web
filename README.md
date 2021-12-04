@@ -4,7 +4,7 @@
 
 
 <h1  >
-    <img  src = "src/assets/paginaCerta.gif">
+    <img  src = "src/assets/capa.gif">
 
 </h1>
 
