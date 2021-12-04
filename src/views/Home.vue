@@ -1,6 +1,5 @@
 <template>
   <div class="about">
-
     <div style="text-align: center; padding-top: 2vh">
       <h1
         style="
@@ -15,8 +14,8 @@
         O que você precisa está aqui. Peça e receba onde estiver.
       </p>
     </div>
-        
-    <v-row style="justify-content: center;">
+
+    <v-row style="justify-content: center">
       <v-col
         v-for="(data, i) in myHomeCards"
         :key="i"
@@ -24,7 +23,6 @@
         md="3"
         xs="2"
         sm="2"
-
       >
         <CardHome
           :cardid="i"
@@ -48,8 +46,8 @@ export default {
   },
   computed: {
     myHomeCards() {
-      return this.$store.state.homeCards;
+      return this.$store.getters.searchHomeCards;
     },
   },
-};
+}; 
 </script>

@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import axios from 'axios'
 
 Vue.use(Vuex)
 
@@ -133,16 +134,30 @@ export default new Vuex.Store({
         imageColor: "background: #ea1d2c"
       },
     ],
+    homeCarousel:[],
     title:"Hello"
 
   },
   mutations: {
+    SET_CAROUSEL(state, payload){
+      state.homeCarousel = payload
+    }
   },
   actions: {
+    fetchCarousel({commit}){
+      axios.get("https://foodbukka.herokuapp.com/api/v1/menu")
+      .then(res=>{
+        const payload = res.data
+        console.log(payload + "aaaa")
+        commit("SET_CAROUSEL", payload)
+      })
+      .catch(err=>{console.log(err)})
+    }
   },
   getters: {
-    bigTitle(state){
-      return state.title.toUpperCase()
+      searchCards: (state) => state.cards,
+      searchRestaurant: (state) => state.restaurant,
+      searchHomeCards: (state) => state.homeCards,
+      searchCarousel: (state) => state.homeCarousel,
     }
-  }
 })

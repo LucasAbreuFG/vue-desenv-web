@@ -19,7 +19,7 @@ export default({
     },
     computed:{
       myRestaurant(){
-        return this.$store.state.restaurant
+        return this.$store.getters.restaurant
       },
     },
 })

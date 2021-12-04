@@ -28,7 +28,7 @@
     },
     computed:{
       myCard(){
-        return this.$store.state.cards
+        return this.$store.getters.searchCards
       },
     },
     components: {
