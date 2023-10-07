@@ -2,12 +2,7 @@
 
 # Connection
 
-
-<h1  >
-    <img  src = "src/assets/capa.gif">
-
-</h1>
-
+![Screenshot](https://github.com/Jornay/vue-desenv-web/blob/main/src/assets/capa.gif?raw=true)
 
 ## 📃 **About**
 
