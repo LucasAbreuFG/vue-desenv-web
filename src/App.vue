@@ -88,4 +88,7 @@ a {
 .v-application--wrap {
   min-height: 0 !important;
 }
+.v-btn--is-elevated{
+  height:5.0vh !important;
+}
 </style>
